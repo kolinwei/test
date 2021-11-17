@@ -16,6 +16,8 @@ steps:
 - script: |
 
 continueOnError: 
+- jobs
+container:
 - task: Ant@1
   inputs:
     buildFile: 'build.xml'
